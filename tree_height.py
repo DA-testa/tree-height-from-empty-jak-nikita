@@ -25,11 +25,11 @@ def main():
       num = int(f.readline())
       # use numpy's int8 type to save memory (similar to java's byte type)
       # appears to just work
-      elements = np.array(f.readline().split(), dtype=np.int8)
+      elements = np.array(f.readline().split(), dtype=np.int16)
       
     elif mode == "I":
       num = int(input("Enter a number of elements in a tree: "))
-      elements = np.array(input("Enter elements: ").split(), dtype=np.int8)
+      elements = np.array(input("Enter elements: ").split(), dtype=np.int16)
       
     else:
       print("Wrong mode")
